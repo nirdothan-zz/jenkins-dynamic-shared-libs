@@ -33,7 +33,7 @@ class Utils implements Serializable {
       steps.echo "in func ${steps.env.MYENVVAR}"
      
     }
-     steps.env.MYENVVAR='hello'
+     env.MYENVVAR='hello'
   
   }
   
