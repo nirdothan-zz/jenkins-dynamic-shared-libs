@@ -30,7 +30,7 @@ class Utils implements Serializable {
     steps.dir ("${config.dir}"){ 
       steps.echo 'hello' 
       steps.sh "${config.cmd}"
-       steps.sh "${config.env.myvar}=hello"
+       steps.sh "${config.env.MYVAR}=hello"
     }
   
   }
