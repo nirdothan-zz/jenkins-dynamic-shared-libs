@@ -22,6 +22,10 @@ class Utils implements Serializable {
     steps.sh  this.buildScript
   }
   
+  def myenv(){
+     steps.env.MYENVVAR='hello'
+  }
+  
   def map(Map config){
     steps.sh "java ${config.cmd}"
   }
@@ -33,7 +37,7 @@ class Utils implements Serializable {
       steps.echo "in func ${steps.env.MYENVVAR}"
      
     }
-     env.MYENVVAR='hello'
+    
   
   }
   
