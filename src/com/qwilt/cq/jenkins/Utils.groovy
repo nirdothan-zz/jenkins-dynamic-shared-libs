@@ -23,7 +23,7 @@ class Utils implements Serializable {
   }
   
   def myenv(){
-    boolean mybool=false
+    def mybool=false
     [true, false,false, mybool]
   }
   
