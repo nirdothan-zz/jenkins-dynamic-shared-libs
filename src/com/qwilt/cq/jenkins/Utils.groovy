@@ -10,4 +10,9 @@ class Utils implements Serializable {
    def func2(args) {
      steps.sh "echo ${args}"
   }
+  
+  
+    def func3(args) {
+     steps.sh "func( ${args})"
+  }
 }
