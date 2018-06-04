@@ -12,13 +12,13 @@ class Utils implements Serializable {
   
 
    def shell(){  
-     steps.sh  "sh ${this.buildStr}"
+     steps.sh  "sh ${this.buildScript}"
   }
   
 
   
   def direct(){  
-    steps.sh  this.buildStr
+    steps.sh  this.buildScript
   }
   
   
