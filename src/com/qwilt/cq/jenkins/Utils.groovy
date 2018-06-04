@@ -23,7 +23,8 @@ class Utils implements Serializable {
   }
   
   def myenv(){
-    true
+    mybool=false
+    true, false,false, mybool
   }
   
   def map(Map config){
