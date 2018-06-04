@@ -13,7 +13,7 @@ class Utils implements Serializable {
   
   def func3(args){
     
-    steps.sh "func('bla')"
+    steps.sh "script {func('bla')}"
   }
   
   
