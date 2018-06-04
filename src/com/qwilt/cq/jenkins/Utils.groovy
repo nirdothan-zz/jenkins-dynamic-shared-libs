@@ -23,7 +23,7 @@ class Utils implements Serializable {
   }
   
   def myenv(){
-     myglobal='hello'
+    steps.sh  "myglobal='hello'"
   }
   
   def map(Map config){
