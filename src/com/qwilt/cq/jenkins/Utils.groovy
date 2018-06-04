@@ -11,13 +11,13 @@ class Utils implements Serializable {
 
   
 
+   def shell(){  
+     steps.sh  "sh ${this.buildStr}"
+  }
   
-   def func2(args) {
-     steps.sh "echo ${args}"
-    }
+
   
-  def func3(){
-    
+  def direct(){  
     steps.sh  this.buildStr
   }
   
