@@ -23,8 +23,8 @@ class Utils implements Serializable {
   }
   
   def myenv(){
-    def mybool=steps.params.myparam1
-    println "printing from func ${mybool}"
+    mybool=steps.params.myparam1
+    println "printing from func"
     [a: true, b:false,c:false, d:mybool]
   }
   
