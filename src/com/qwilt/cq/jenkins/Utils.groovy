@@ -24,7 +24,8 @@ class Utils implements Serializable {
   
   def myenv(){
     def mybool=steps.params.myparam1
-    [a: true, b:false,c:false, d: mybool]
+    println "printing from func ${mybool}"
+    [a: true, b:false,c:false, d:mybool]
   }
   
   def map(Map config){
