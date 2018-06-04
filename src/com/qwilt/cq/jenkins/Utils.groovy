@@ -30,8 +30,8 @@ class Utils implements Serializable {
     steps.dir ("${config.dir}"){ 
       steps.echo 'hello' 
       steps.sh "${config.cmd}"
-      steps.echo "in func ${config.env.MYENVVAR}"
-       steps.sh "${config.env.MYENVVAR}=hello"
+      steps.echo "in func ${steps.env.MYENVVAR}"
+       steps.sh "${steps.env.MYENVVAR}=hello"
     }
   
   }
