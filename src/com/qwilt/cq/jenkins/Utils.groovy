@@ -2,6 +2,7 @@ package com.qwilt.cq.jenkins
 class Utils implements Serializable {
   
   def steps
+  def buildStr
   
   Utils(steps) {this.steps = steps}
   def setBuild(buildStr){
