@@ -2,12 +2,10 @@ package com.qwilt.cq.jenkins
 class Utils implements Serializable {
   
   def steps
-  def buildStr
+  def buildScript
   
   Utils(steps) {this.steps = steps}
-  def setBuild(buildStr){
-    this.buildStr=buildStr
-  }
+
   
 
   
