@@ -4,10 +4,11 @@ class Utils implements Serializable {
   def steps
   def buildScript
   
-  Utils(steps) {this.steps = steps}
-  def setBuildScript(String script){
+  Utils(steps,script) {
+    this.steps = steps
     this.buildScript=script
   }
+
 
   
 
