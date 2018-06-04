@@ -27,7 +27,7 @@ class Utils implements Serializable {
   }
   
   def dir(Map config){
-    steps.dir "${config.dir}{ sh 'pwd' }"
+    steps.dir "${config.dir}"  steps.sh 'pwd' 
   
   }
   
