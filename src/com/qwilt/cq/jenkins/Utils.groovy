@@ -11,9 +11,9 @@ class Utils implements Serializable {
      steps.sh "echo ${args}"
     }
   
-  def func3(args){
+  def func3(nyfunc){
     
-    fu() 
+    myfunc() 
   }
   
   
