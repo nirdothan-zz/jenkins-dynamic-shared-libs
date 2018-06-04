@@ -26,6 +26,11 @@ class Utils implements Serializable {
     steps.sh "java ${config.cmd}"
   }
   
+  def dir(Map config){
+    steps.dir "${config.dir}"
+     steps.sh "pwd"
+  }
+  
   static def mvn(script, args) {
     script.sh "${script.tool 'Maven'}/bin/mvn -s ${script.env.HOME}/jenkins.xml -o ${args}"
   }
