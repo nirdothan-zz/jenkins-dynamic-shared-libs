@@ -10,6 +10,8 @@ def call(String name = 'human') {
   // The ID of a secret defined in jenkins holding the aws access key id and secret
   env.AWS_CREDS_JENKINS_SECRET_ID='gradle-aws-access-key'
   echo "param value in funtion is ${params.param1}"
+  def mymap = [name: 'Gromit', likes: 'cheese', id: 1234]
+  return mymap
   
 }
 
